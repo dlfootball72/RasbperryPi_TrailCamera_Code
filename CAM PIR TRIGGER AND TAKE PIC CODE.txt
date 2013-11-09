@@ -1,0 +1,21 @@
+import time
+import RPi.GPIO as io
+io.setmode(io.BCM)
+ 
+pir_pin = 18
+door_pin = 23
+ 
+io.setup(pir_pin, io.IN)
+io.setup(door_pin, io.IN, pull_up_down=io.PUD_UP)
+ 
+while True:
+    if io.input(pir_pin):
+        print("PIR ALARM!") <--change this to raspistill -o image.jpg     -->
+    if io.input(door_pin):
+        print("DOOR ALARM!")
+    time.sleep(0.5)
+
+SITES NEEDED FOR CODE TO TAKE PICS AFTER PIR TRIGGER
+http://learn.adafruit.com/adafruits-raspberry-pi-lesson-12-sensing-movement/overview
+
+http://www.raspberrypi.org/archives/3890#comment-58075
