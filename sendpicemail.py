@@ -1,8 +1,8 @@
 import time
 import smtplib
-TO = 'matthewzourelias@gmail.com'
-GMAIL_USER = 'matthewzourelias@gmail.com'
-GMAIL_PASS = 'mrcz031808161988'
+TO = 'youremail@gmail.com'
+GMAIL_USER = 'youremail@gmail.com'
+GMAIL_PASS = 'password'
 SUBJECT = 'Intrusion!!'
 TEXT = 'Your PIR sensor detected movement'
 def send_email():
