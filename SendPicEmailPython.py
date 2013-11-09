@@ -5,12 +5,12 @@ import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage 
-addr_to = 'matthewzourelias@gmail.com'
+addr_to = 'youremail@gmail.com'
 addr_from = 'Ender'
 smtp_server = 'smtp.gmail.com'
 smtp_port   = 587
-smtp_user   = 'matthewzourelias@gmail.com'
-smtp_pass   = 'mrcz031808161988'
+smtp_user   = 'youremail@gmail.com'
+smtp_pass   = 'password'
 var=1
 while var==1 :
 	msg = MIMEMultipart()
